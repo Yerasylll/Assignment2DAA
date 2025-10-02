@@ -6,6 +6,13 @@ public class MetricsCollector {
     private final SwapMetric swaps = new SwapMetric();
     private final AccessMetric accesses = new AccessMetric();
 
+    public void reset() {
+        time.reset();
+        comparisons.reset();
+        swaps.reset();
+        accesses.reset();
+    }
+
     public TimeMetric time() {return time;}
     public ComparisonMetric comparisons() {return comparisons;}
     public SwapMetric swaps() {return swaps;}
