@@ -4,6 +4,7 @@ import com.company.metricsAndCsv.metrics.MetricsCollector;
 
 public class ClassicShellSort {
     public static void sort(int[] arr, MetricsCollector metrics) {
+
         metrics.reset();
         metrics.time().start();
 
