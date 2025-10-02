@@ -15,7 +15,6 @@ public class ShellSort {
         int[] gaps = generateGaps(n, seq);
 
         for (int g : gaps) {
-
             for (int i = g; i < n; i++) {
                 int temp = arr[i];
                 metrics.accesses().incAccesses();
